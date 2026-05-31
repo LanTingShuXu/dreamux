@@ -28,10 +28,16 @@ export type { AccessStore } from './contract/access-store.js'
 export {
   parseInbound,
   applyMentions,
+  mentionName,
   extractPostText,
   type InboundMessage,
   type ParsedInbound,
 } from './parse/content.js'
+export {
+  normalizeBotMemberAddedEvent,
+  BOT_MEMBER_ADDED_EVENT_TYPE,
+  type FeishuBotMemberAddedEvent,
+} from './parse/bot-member.js'
 export {
   normalizeCommentEvent,
   DOC_COMMENT_EVENT_TYPE,
